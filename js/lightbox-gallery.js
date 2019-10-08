@@ -37,6 +37,8 @@ gallery.addEventListener("click", e => {
   if (e.target.dataset.source) {
     event.preventDefault();
 
+    lightboxImg.src = "";
+
     lightboxImg.src = e.target.dataset.source;
     lightboxImg.alt = e.target.alt;
     lightbox.classList.add("is-open");
